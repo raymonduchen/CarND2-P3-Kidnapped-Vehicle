@@ -2,7 +2,7 @@
 
 ## Description
 
-**This my 3rd project result of Udacity self-driving car nanodegree (CarND) term 2. It's required to localize a "kidnapped" (i.e. loss localization) vehicle given a map, a (noisy) GPS estimation of vehicle initial location, (noisy) range sensing and control data. In this project, 2 dimensional  particle filter is implemented and a simulator is provided to visualize particle filter localization result.**
+**This my 3rd project result of Udacity self-driving car nanodegree (CarND) term 2. It's required to localize a "kidnapped" (i.e. loss of localization) vehicle given a map, a (noisy) GPS estimation of vehicle initial location, (noisy) range sensing and control data. In this project, 2 dimensional  particle filter is implemented and a simulator is provided to visualize particle filter localization result.**
 
 **The following demonstrates particle filter localization result :** 
 
@@ -38,11 +38,4 @@ The goals / steps of this project are shown as below:
 
 ## Particle Filter
 
-Particle filter is a Bayes filter implementation based on Monte-Carlo method. It first generate several particles to represent the robot localization, make prediction based on control data and robot motion model, update localization using sensing data (e.g. range sensor), resample particles according to weights estimated based on Gaussian distribution, and repeat to prediction step again. 
-
-typical technique used to fuse multiple sensing data and get a more accurate result (state) based on linear assumption and Bayes rule. 
-Unlike (extended) Kalman filter which assumes measurement to be linear, unscented Kalman filter can be applied to both linear and nonlinear case. 
-
-
-
-
+Particle filter is a Bayes filter implementation based on Monte-Carlo method. It first generates several particles to represent the robot localization, makes prediction based on control data and robot motion model, updates localization using sensing data (e.g. range sensor), resamples particles according to weights estimated based on Gaussian distribution, and repeats to prediction step again. 
